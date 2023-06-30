@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const app = require("./app");
 
 const DB_HOST =
-  "mongodb+srv://Oleksandr:OJFySbdLCFAExYt2@cluster0.gmmk6zx.mongodb.net/contacts_list?retryWrites=true&w=majority";
+  "mongodb+srv://Oleksandr:oJFySbdLCFAExYt2@cluster0.gmmk6zx.mongodb.net/contacts_list?retryWrites=true&w=majority";
 
 mongoose.set("strictQuery", true);
 
@@ -13,6 +13,6 @@ mongoose
     console.log("Database connection successful");
   })
   .catch((error) => {
-    console.log(error.masage);
+    console.log(error.message);
     process.exit(1);
   });
