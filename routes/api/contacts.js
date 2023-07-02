@@ -27,7 +27,7 @@ router.putch(
   "/:contactId/favorite",
   isValidId,
   validateBody(schemas.updateFavoriteSchema),
-  ctrl.updateFavorite
+  ctrl.updateStatusContact
 );
 
 module.exports = router;
