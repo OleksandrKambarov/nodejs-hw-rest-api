@@ -20,6 +20,7 @@ const userSchema = new Schema(
       default: "starter",
     },
     token: String,
+    default: "",
   },
   { versionKey: false, time: true }
 );
@@ -30,7 +31,7 @@ const registerSchema = Joi.object({
   name: Joi.string().required(),
   email: Joi.string().required(),
   password: Joi.string().required(),
-  //   subscription: Joi.string().required(),
+  subscription: Joi.string().required(),
 });
 
 const loginSchema = Joi.object({
